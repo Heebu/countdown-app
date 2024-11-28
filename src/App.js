@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Countdown from "./countdown";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-green-50 to-green-950 text-white">
+        <header className="text-center mb-10">
+          <img src="/ir.png" alt="IR Logo" className="h-40 w-auto mx-auto" />
+          <h1 className="text-4xl font-bold mt-4">Countdown To Our Get Together</h1>
+        </header>
+        <Countdown targetDate="2024-12-23T00:00:00" />
+      </div>
   );
 }
 
